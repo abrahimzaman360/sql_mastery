@@ -74,14 +74,14 @@ CREATE TABLE IF NOT EXISTS SALES.Order
     order_id               INT PRIMARY KEY,
     product_id             INT NOT NULL,
     customer_id            INT NOT NULL,
-    sales_person_id        INT,
+    Sales_person_id        INT,
     order_date             DATE,
     order_shipping_date    DATE,
     order_status           VARCHAR(50),
     order_shipping_address VARCHAR(255),
     order_billing_address  VARCHAR(255),
     order_quantity         INT,
-    order_sales            INT,
+    order_Sales            INT,
     creation_time          TIMESTAMP
 );
 
@@ -108,14 +108,14 @@ CREATE TABLE IF NOT EXISTS SALES.OrderArchive
     order_id               INT,
     product_id             INT,
     customer_id            INT,
-    sales_person_id        INT,
+    Sales_person_id        INT,
     order_date             DATE,
     order_shipping_date    DATE,
     order_status           VARCHAR(50),
     order_shipping_address VARCHAR(255),
     order_billing_address  VARCHAR(255),
     order_quantity         INT,
-    order_sales            INT,
+    order_Sales            INT,
     creation_time          TIMESTAMP
 );
 
